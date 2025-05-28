@@ -71,54 +71,250 @@
 
     <div class="layout-right">
       <div class="layout-int">
-        <div class="create-product-container">
-          <div>
-            <h1>Gestión de Productos</h1>
-            <p class="paragraph">
-              Administra el catálogo de productos de tu tienda
-            </p>
-          </div>
-          <button class="create-product">+ Crear Producto</button>
-        </div>
-        <div class="list-product">
-          <div>
-            <h2>Lista de Productos</h2>
-            <p class="paragraph">4 producto(s) encontrado(s)</p>
-          </div>
-          <div class="product-inputs">
+        <div class="product-container">
+          <div class="create-product-container">
             <div>
-              <input
-                class="input-style"
-                type="text"
-                placeholder="Buscar productos..."
-              />
+              <h1 class="create-product-title">Gestión de Productos</h1>
+              <p class="create-product-paragraph">
+                Administra el catálogo de productos de tu tienda
+              </p>
             </div>
-            <select class="input-style" name="" id="">
-              <option value="1">Todos los campos</option>
-            </select>
+            <button class="create-product">
+              <div class="square"></div>
+              Crear Producto
+            </button>
           </div>
-          <div class="product-table-container paragraph">
-            <div class="product-table">
-              <div>
-                <label for="">Imagen</label>
-              </div>
-              <div>
-                <label for="">Nombre</label>
-              </div>
-            </div>
-            <div class="product-table">
-              <div>
-                <label for="">Marca</label>
-              </div>
-              <div>
-                <label for="">Categorias</label>
-              </div>
-            </div>
+
+          <div class="list-product">
             <div>
-              <label for="">Código</label>
+              <h2 class="list-product-title">Lista de Productos</h2>
+              <p class="list-product-paragraph">4 producto(s) encontrado(s)</p>
             </div>
-            <div>
-              <label for="">Acciones</label>
+            <div class="product-inputs">
+              <div class="field">
+                <div class="square"></div>
+                <input
+                  class="input-style"
+                  type="text"
+                  placeholder="Buscar productos..."
+                />
+              </div>
+              <div class="field-2">
+                <div class="square"></div>
+                <select class="input-style" name="" id="">
+                  <option value="1">Todos los campos</option>
+                </select>
+              </div>
+            </div>
+            <!-- <div class="product-table-container paragraph">
+              <div class="product-table">
+                <div>
+                  <label for="">Imagen</label>
+                </div>
+                <div>
+                  <label for="">Nombre</label>
+                </div>
+  
+                <div>
+                  <label for="">Marca</label>
+                </div>
+                <div>
+                  <label for="">Categorias</label>
+                </div>
+  
+                <div>
+                  <label for="">Código</label>
+                </div>
+                <div>
+                  <label for="">Acciones</label>
+                </div>
+              </div>
+              <div class="product-table">
+                <div>
+                  <img class="img" src="" alt="" />
+                </div>
+                <div>
+                  <label for="">Smartphone Galaxy S24</label>
+                </div>
+  
+                <div>
+                  <label for="">Samsung</label>
+                </div>
+                <div class="category-chips">
+                  <div>
+                    <div>Electronics</div>
+                  </div>
+                  <div>Mobile</div>
+                </div>
+  
+                <div>
+                  <label for="">SGS24-001</label>
+                </div>
+                <div class="action-icon">
+                  <div>
+                    <button class="icon">✏️</button>
+                  </div>
+                  <div>
+                    <button class="icon">🗑️</button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="table">
+              <div class="table-head">
+                <div class="table-head-row">
+                  <label
+                    class="table-head-cell table-head-cell-label table-head-cell-image"
+                    for=""
+                    >Imagen</label
+                  >
+                  <label
+                    class="table-head-cell table-head-cell-label table-head-cell-name"
+                    for=""
+                    >Nombre</label
+                  >
+                  <label class="table-head-cell table-head-cell-label" for=""
+                    >Marca</label
+                  >
+                  <label
+                    class="table-head-cell table-head-cell-label table-head-cell-category"
+                    for=""
+                    >Categorías</label
+                  >
+                  <label class="table-head-cell table-head-cell-label" for=""
+                    >Codigo</label
+                  >
+                  <label
+                    class="table-head-cell table-head-cell-label table-head-action"
+                    for=""
+                    >Acciones</label
+                  >
+                </div>
+              </div>
+
+              <div class="table-body">
+                <div class="table-body-row">
+                  <div class="table-body-cell table-body-cell-image">
+                    <div class="table-body-cell-image-container">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/herracol-api-8820d.appspot.com/o/products%2FAB-80-Spray-Lubricant-10-oz.jpg?alt=media "
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <label class="table-body-cell table-body-cell-name" for=""
+                    >Smartphone Galaxy S24</label
+                  >
+
+                  <label class="table-body-cell" for="">Samsung</label>
+
+                  <div
+                    class="table-body-cell category-chips table-body-cell-category"
+                  >
+                    <span class="chip">Electronics</span>
+                    <span class="chip">Mobile</span>
+                  </div>
+
+                  <label class="table-body-cell" for="">SGS24-001</label>
+
+                  <div class="table-body-cell table-body-cell-action">
+                    <button class="icon">✏️</button>
+                    <button class="icon">🗑️</button>
+                  </div>
+                </div>
+                <div class="table-body-row">
+                  <div class="table-body-cell table-body-cell-image">
+                    <div class="table-body-cell-image-container">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/herracol-api-8820d.appspot.com/o/products%2FAB-80-Spray-Lubricant-10-oz.jpg?alt=media "
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <label class="table-body-cell table-body-cell-name" for=""
+                    >MacBook Pro 16</label
+                  >
+
+                  <label class="table-body-cell" for="">Apple</label>
+
+                  <div
+                    class="table-body-cell category-chips table-body-cell-category"
+                  >
+                    <span class="chip">Electronics</span>
+                    <span class="chip">Computers</span>
+                  </div>
+
+                  <label class="table-body-cell" for="">MBP16-002</label>
+
+                  <div class="table-body-cell table-body-cell-action">
+                    <button class="icon">✏️</button>
+                    <button class="icon">🗑️</button>
+                  </div>
+                </div>
+                <div class="table-body-row">
+                  <div class="table-body-cell table-body-cell-image">
+                    <div class="table-body-cell-image-container">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/herracol-api-8820d.appspot.com/o/products%2FAB-80-Spray-Lubricant-10-oz.jpg?alt=media "
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <label class="table-body-cell table-body-cell-name" for=""
+                    >Nike Air Max</label
+                  >
+
+                  <label class="table-body-cell" for="">Nike</label>
+
+                  <div
+                    class="table-body-cell category-chips table-body-cell-category"
+                  >
+                    <span class="chip">Fashion</span>
+                    <span class="chip">Shoes</span>
+                  </div>
+
+                  <label class="table-body-cell" for="">NAM-003</label>
+
+                  <div class="table-body-cell table-body-cell-action">
+                    <button class="icon">✏️</button>
+                    <button class="icon">🗑️</button>
+                  </div>
+                </div>
+                <div class="table-body-row">
+                  <div class="table-body-cell table-body-cell-image">
+                    <div class="table-body-cell-image-container">
+                      <img
+                        src="https://firebasestorage.googleapis.com/v0/b/herracol-api-8820d.appspot.com/o/products%2FAB-80-Spray-Lubricant-10-oz.jpg?alt=media "
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <label class="table-body-cell table-body-cell-name" for=""
+                    >Coffee Maker Deluxe</label
+                  >
+
+                  <label class="table-body-cell" for="">Breville</label>
+
+                  <div
+                    class="table-body-cell category-chips table-body-cell-category"
+                  >
+                    <span class="chip">Home</span>
+                    <span class="chip">Kitchen</span>
+                  </div>
+
+                  <label class="table-body-cell" for="">CMD-004</label>
+
+                  <div class="table-body-cell table-body-cell-action">
+                    <button class="icon">✏️</button>
+                    <button class="icon">🗑️</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
