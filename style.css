@@ -152,6 +152,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .list-product {
@@ -168,22 +169,9 @@ body {
   gap: 10px;
 }
 
-.product-table-container {
-  display: flex;
-  align-items: center;
-}
-
-.product-table-row {
-}
-
-.product-table {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-}
-
 .input-style {
   border: none;
+  outline: none;
 }
 
 .field {
@@ -219,15 +207,10 @@ body {
   display: flex;
 }
 
-.action-icon {
-  display: flex;
-}
-
 .icon {
   background-color: #f4f4f5;
   border: none;
   padding: 6px;
-  margin-left: 4px;
   border-radius: 6px;
   cursor: pointer;
 }
@@ -236,6 +219,11 @@ body {
   overflow-x: scroll;
   border: 1px solid #e4e4e7;
   border-radius: 8px;
+}
+
+.table-head,
+.table-body {
+  min-width: fit-content;
 }
 
 .table-head-row,
