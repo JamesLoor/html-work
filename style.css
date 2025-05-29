@@ -114,7 +114,6 @@ body {
 
   width: 100%;
   height: 100%;
-  padding: 24px;
 }
 
 .create-product-container {
@@ -131,6 +130,7 @@ body {
 .product-container {
   display: grid;
   gap: 24px;
+  padding: 24px;
 }
 
 .create-product-paragraph {
@@ -310,4 +310,20 @@ body {
 .table-head-cell-image {
   min-width: 80px;
   max-width: 100px;
+}
+
+.layout-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e7;
+}
+
+.square-header {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(83, 83, 83);
+  border-radius: 4px;
 }
