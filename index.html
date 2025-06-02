@@ -83,7 +83,7 @@
                 Administra el catálogo de productos de tu tienda
               </p>
             </div>
-            <button class="create-product">
+            <button popovertarget="my-popover" class="create-product">
               <div class="square"></div>
               Crear Producto
             </button>
@@ -172,7 +172,9 @@
 
                   <div class="table-body-cell table-body-cell-action">
                     <button class="icon">✏️</button>
-                    <button class="icon">🗑️</button>
+                    <button popovertarget="my-popover-2" class="icon">
+                      🗑️
+                    </button>
                   </div>
                 </div>
                 <div class="table-body-row">
@@ -202,7 +204,9 @@
 
                   <div class="table-body-cell table-body-cell-action">
                     <button class="icon">✏️</button>
-                    <button class="icon">🗑️</button>
+                    <button popovertarget="my-popover-2" class="icon">
+                      🗑️
+                    </button>
                   </div>
                 </div>
                 <div class="table-body-row">
@@ -232,7 +236,9 @@
 
                   <div class="table-body-cell table-body-cell-action">
                     <button class="icon">✏️</button>
-                    <button class="icon">🗑️</button>
+                    <button popovertarget="my-popover-2" class="icon">
+                      🗑️
+                    </button>
                   </div>
                 </div>
                 <div class="table-body-row">
@@ -262,9 +268,96 @@
 
                   <div class="table-body-cell table-body-cell-action">
                     <button class="icon">✏️</button>
-                    <button class="icon">🗑️</button>
+                    <button popovertarget="my-popover-2" class="icon">
+                      🗑️
+                    </button>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div popover id="my-popover" class="modal-overlay">
+          <div class="hidden-modal">
+            <button popovertargetaction="my-popover" class="close-button">
+              &times;
+            </button>
+            <div class="modal-content">
+              <div class="product-information">
+                <h2 class="new-product-title">Crear Nuevo Producto</h2>
+                <p class="product-text">
+                  Completa la información del nuevo producto
+                </p>
+              </div>
+
+              <form class="create-product-form" action="">
+                <div class="create-modal-input">
+                  <div class="modal-input">
+                    <label class="modal-input-field" for="">Nombre *</label>
+                    <input class="name-input" type="text" />
+                  </div>
+                  <div class="modal-input">
+                    <label class="modal-input-field" for="">Marca *</label>
+                    <input class="mark-input" type="text" />
+                  </div>
+                </div>
+                <div class="modal-input-code">
+                  <label class="modal-input-field" for="">Código</label>
+                  <input class="code-input" type="text" />
+                </div>
+                <div class="add-category">
+                  <span>Categorias</span>
+                  <button class="add-category-button">
+                    <div>+</div>
+                    Agregar Categoria
+                  </button>
+                </div>
+                <div class="add-image-container">
+                  <label class="modal-input-field" for="">Imágenes</label>
+                  <div class="delete-image">
+                    <input
+                      placeholder="URL de la imagen"
+                      class="url-input"
+                      type="url"
+                    />
+                    <button class="delete-button">🗑️</button>
+                  </div>
+                  <button class="add-image-button">
+                    <div>+</div>
+                    Agregar Imagen
+                  </button>
+                </div>
+                <label for="">Información Adicional</label>
+                <div class="additional-information-container">
+                  <div class="additional-information">
+                    <label for="">Código de Info</label>
+                    <input class="info-code-input" type="text" />
+                  </div>
+                  <div class="additional-information">
+                    <label for="">Información</label>
+                    <input class="information-input" type="text" />
+                  </div>
+                </div>
+                <div class="cancel-create-buttons">
+                  <button class="cancel-button">Cancelar</button>
+                  <button class="create-button">Crear Producto</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div popover id="my-popover-2" class="modal-overlay-2">
+          <div class="hidden-modal-2">
+            <div class="modal-content-2">
+              <h1 class="confirmation-title">¿Estás seguro?</h1>
+              <p class="eliminate-product-text">
+                Esta acción no se puede deshacer. Se eliminara permanentemente
+                el <br />
+                producto "Smartphone Galaxy S24".
+              </p>
+              <div class="modal-content-2-buttons">
+                <button class="cancel-button-2">Cancelar</button>
+                <button class="eliminate-button">Eliminar</button>
               </div>
             </div>
           </div>

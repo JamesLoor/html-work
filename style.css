@@ -327,3 +327,267 @@ body {
   background-color: rgb(83, 83, 83);
   border-radius: 4px;
 }
+
+.modal-overlay {
+  width: 100dvw;
+  height: 100dvh;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 24px;
+  width: 600px;
+}
+
+.create-product-form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.product-information {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.create-modal-input {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-input-field {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.modal-input-code {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-input,
+.mark-input {
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid #e4e4e7;
+}
+
+.code-input {
+  border-radius: 6px;
+  border: 1px solid #e4e4e7;
+  height: 35px;
+}
+
+.new-product-title {
+  font-size: 18px;
+}
+
+.product-text {
+  color: #71717a;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.add-category {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hidden-modal {
+  position: relative;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.add-category-button {
+  border: 1px solid #e4e4e7;
+  width: 170px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.add-image-container {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.delete-image {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.url-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.delete-button {
+  border: 1px solid #e4e4e7;
+  background-color: white;
+  border-radius: 6px;
+  width: 50px;
+  height: 41px;
+  text-align: center;
+}
+
+.add-image-button {
+  display: flex;
+  border: 1px solid #e4e4e7;
+  width: 170px;
+  height: 40px;
+  border-radius: 6px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.additional-information-container {
+  display: flex;
+  gap: 10px;
+}
+
+.additional-information {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-code-input {
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid #e4e4e7;
+}
+
+.information-input {
+  height: 70px;
+  border-radius: 6px;
+  border: 1px solid #e4e4e7;
+}
+
+.cancel-create-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.cancel-button {
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  width: 90px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.create-button {
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  width: 130px;
+  height: 35px;
+}
+
+.close-button {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  top: 15px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: black;
+}
+
+.modal-overlay-2 {
+  width: 100dvw;
+  height: 100dvh;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden-modal-2 {
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.modal-content-2 {
+  padding: 24px;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.modal-content-2-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: end;
+}
+
+.cancel-button-2 {
+  border: 1px solid #e4e4e7;
+  border-radius: 6px;
+  width: 95px;
+  height: 38px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.eliminate-button {
+  background-color: red;
+  color: white;
+  border-radius: 6px;
+  width: 90px;
+  height: 38px;
+}
+
+.confirmation-title {
+  font-size: 19px;
+}
+
+.eliminate-product-text {
+  color: #71717a;
+  font-weight: 500;
+  font-size: 15px;
+}
